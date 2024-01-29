@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dot1 {
+          height: 60px;
+          width: 60px;
+          background-color: #f2b4b4;
+          border-radius: 50%;
+          display: inline-block;
+          place-content: center;
+          margin: auto;
+          margin-top: 25%;
+          margin-inline: 15px;
+        }
+
+        .pink{
+            background-color:#f2b4b4;
+            color:white;
+        }
+
+        .dot2 {
+          height: 60px;
+          width: 60px;
+          background-color: #a9e2cf;
+          border-radius: 50%;
+          display: inline-block;
+          place-content: center;
+          margin: auto;
+          margin-inline: 15px;
+
+        }
+
+        .mint{
+            background-color: #a9e2cf;
+            color: white;
+        }
+
+        .dot3 {
+          height: 60px;
+          width: 60px;
+          background-color: #d8c5e5;
+          border-radius: 50%;
+          display: inline-block;
+          place-content: center;
+          margin: auto;
+          margin-inline: 15px;
+
+        }
+
+        .purple{
+            background-color: #d8c5e5;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <div style="text-align:center">
+        <span class="dot1" id="dot1"></span>
+        <span class="dot2" id="dot2"></span>
+        <span class="dot3" id="dot3"></span>
+      </div>
+      
+</body>
+<script>
+    document.getElementById('dot1').addEventListener('click', function() {
+        document.body.classList.toggle('pink');
+    });
+    document.getElementById('dot2').addEventListener('click', function() {
+        document.body.classList.toggle('mint');
+    });
+    document.getElementById('dot3').addEventListener('click', function() {
+        document.body.classList.toggle('purple');
+    });
+    </script>
+</html>
